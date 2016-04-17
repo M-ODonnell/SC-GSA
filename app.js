@@ -47,7 +47,7 @@ require('./config/passport')(passport);
 
 // required for passport
 app.use(session({
-  secret: 'sshhhhitsasecretdonttellanyone',
+  secret: 'D8BF3D1B4ECDA135765CA3CEC3CC5',
   store: new redisStore({ host: configAuth.session.host, port: configAuth.session.port, db: configAuth.session.database}),
   resave: false, // don't save session if unmodified
   saveUninitialized: false, // don't create session until something stored
@@ -63,7 +63,6 @@ app.use(flash()); // use connect-flash for msgs stored in session
 var admin = require('./routes/admin');
 var about = require('./routes/about');
 var contact = require('./routes/contact');
-var events = require('./routes/events');
 var blog = require('./routes/blog');
 var resources = require('./routes/resources');
 var index = require('./routes/index');
@@ -71,7 +70,6 @@ var index = require('./routes/index');
 app.use('/admin', admin);
 app.use('/about', about);
 app.use('/contact', contact);
-app.use('/events', events);
 app.use('/blog', blog);
 app.use('/external-resources', resources);
 app.use('/', index);

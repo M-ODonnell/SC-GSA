@@ -13,7 +13,6 @@ function validateCheckbox() {
     }
 
 }
-
 function validate() {
     if ($('#checkbox1').is(':checked')) {
         $('#name').removeAttr('required');
@@ -23,3 +22,19 @@ function validate() {
         $('#form').validate();
     }
 }
+
+$(document).ready(function() {
+    $('#form #submit').click(function(event) {
+        event.preventDefault();
+        var data = 'test data';
+        jQuery.post(
+            '/contact',
+            data,
+            function(data) {
+                console.log('data ', data);
+                //window.location = '/contact';
+            },
+            'json'
+        );
+    });
+});

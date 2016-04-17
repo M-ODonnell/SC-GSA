@@ -27,12 +27,20 @@ function truncatePost(content, id) {
     }
 }
 
-function backLink (referrer) {
+function backLink(referrer) {
     var lastFour = referrer.substr(referrer.length - 3);
     if (lastFour == 'new') {
         return "<a class='btn btn-default' href='"+referrer+"'>Back to add a new blog post</a>"
     } else {
         return "<a class='btn btn-default' href='"+referrer+"'>Back to all blog posts</a>"
+    }
+}
+
+function formatResponse(success, response) {
+    if (success) {
+        return "<div class='alert alert-success'>"+response+"</div>";
+    } else {
+        return "<div class='alert alert-danger'>"+response+"</div>";
     }
 }
 
@@ -56,5 +64,6 @@ module.exports = {
     dateFormat: dateFormat,
     paginate: paginate,
     truncatePost: truncatePost,
-    backLink: backLink
+    backLink: backLink,
+    formatResponse: formatResponse
 };
