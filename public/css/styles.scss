@@ -145,6 +145,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+.pagination > li > a {
+  color: $linkCol;
+}
+.pagination > .active > a {
+  background-color: $linkCol;
+  border-color: $linkCol;
+}
+
 footer {
   background-color: $secColor;
   padding: 1.5% 0 .5%;
@@ -153,10 +161,6 @@ footer {
   bottom:0;
   left:0;
 }
-
-
-
-
 
 
 #innerFoot {

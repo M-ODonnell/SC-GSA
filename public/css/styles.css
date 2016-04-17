@@ -105,6 +105,13 @@ header {
 h1 {
   margin-bottom: 20px; }
 
+.pagination > li > a {
+  color: #8C489F; }
+
+.pagination > .active > a {
+  background-color: #8C489F;
+  border-color: #8C489F; }
+
 footer {
   background-color: #C3C3E5;
   padding: 1.5% 0 .5%;
