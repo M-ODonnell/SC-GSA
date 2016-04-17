@@ -1,5 +1,5 @@
-$mainColor: #0058ba;
-$secColor: #ffb1f0;
+$mainColor: #443266;
+$secColor: #C3C3E5;
 $bodyBG: #F1F0FF;
 $linkCol: #8C489F;
 
@@ -8,7 +8,13 @@ $linkCol: #8C489F;
 /*$mainColor: #443266;
 $secColor: #C3C3E5;
 $bodyBG: #F1F0FF;
-$linkCol: #8C489F;*/
+$linkCol: #8C489F;
+
+$mainColor: #0058ba; blue
+$secColor: #ffb1f0; pink
+$bodyBG: #F1F0FF;
+$linkCol: #8C489F; purple
+*/
 
 
 /*#0058ba
@@ -54,24 +60,25 @@ button {
 .special {
   margin: 2% 0 2%;
   padding: 2%;
-  background-color: $linkCol;
-  color: $secColor;
+  background-color: $secColor;
+  color: black;
   border-radius: 25px;
 
   a:link {
-    color: $bodyBG;
+    color: $mainColor;
     font-weight: bold;
+    text-decoration: underline;
   }
 
   /* visited link */
   a:visited {
-    color: $bodyBG;
+    color: $mainColor;
     font-weight: bold;
   }
 
   /* mouse over link */
   a:hover {
-    color: $bodyBG;
+    color: black;
     font-weight: bold;
   }
 
@@ -106,6 +113,7 @@ header {
   a:hover {
     color: $bodyBG;
     font-weight: bold;
+    text-decoration: none;
   }
 
   /* selected link */
@@ -133,7 +141,9 @@ header {
   width: 100%;
 }
 
-
+h1 {
+  margin-bottom: 20px;
+}
 
 footer {
   background-color: $secColor;
