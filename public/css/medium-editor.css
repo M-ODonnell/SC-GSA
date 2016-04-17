@@ -234,3 +234,11 @@
   border: none;
   background-color: inherit;
 }
+.checkbox{
+  float:right;
+}
+ol > li > h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
