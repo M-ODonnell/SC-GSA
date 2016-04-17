@@ -47,7 +47,7 @@ require('./config/passport')(passport);
 
 // required for passport
 app.use(session({
-  secret: 'sshhhhitsasecretdonttellanyone',
+  secret: 'D8BF3D1B4ECDA135765CA3CEC3CC5',
   store: new redisStore({ host: configAuth.session.host, port: configAuth.session.port, db: configAuth.session.database}),
   resave: false, // don't save session if unmodified
   saveUninitialized: false, // don't create session until something stored
