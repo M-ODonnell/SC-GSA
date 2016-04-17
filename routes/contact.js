@@ -35,7 +35,7 @@ router.post('/', function(req, res, next) {
     var message = "<p>Name: "+senderName+"</p><p>Email: "+req.body.email+"</p>"+"<p>Message: "+req.body.message+"</p>";
     var mailOptions = {
         from: 'scgsa.contact.form@gmail.com',
-        to: 'scgsa.test@gmail.com',
+        to: 'meghan.tara@gmail.com',
         subject: 'Message From SCGSA Contact Form',
         html: message
     };
@@ -44,7 +44,7 @@ router.post('/', function(req, res, next) {
             console.log(error);
             //res.json({hey: 'error'});
             req.flash('emailSuccess', false);
-            req.flash('emailResponse', "We're sorry,there was an error sending your message.");
+            req.flash('emailResponse', "We're sorry, there was an error sending your message.");
             res.redirect('/contact');
         } else {
             console.log('Message sent: ', info.response);
