@@ -87,6 +87,8 @@ button {
 img {
   max-width: 100%;
   height: auto; }
+  img.full-width {
+    width: 100%; }
 
 /* for election guidelines under /about other documents */
 p.docHeading {

@@ -124,6 +124,9 @@ button {
 img {
   max-width: 100%;
   height: auto;
+  &.full-width {
+    width: 100%;
+  }
 }
 
 /* for election guidelines under /about other documents */
