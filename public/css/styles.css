@@ -172,6 +172,9 @@ footer {
   #innerFoot + span.pull-left {
     margin: 5px 0 0 10px; }
 
+a.close {
+  font-size: 14px; }
+
 footer span.pull-right {
   margin: 5px 10px 0 0; }
 
